@@ -20,7 +20,8 @@ class School
     end
   end
   
-  def grade(level)
+  def grade(year)
+    
   
   school = School.new("Bayside High School")
   

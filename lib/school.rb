@@ -6,11 +6,19 @@ class School
   end
   
   def roster
-    @roster = roster
+    @roster
   end
   
   def add_student(name, grade)
-    if 
+    if @roster[grade]
+      if !(@roster[grade].include?(name))
+        @roster[grade] << name
+      end
+    else
+      @roster[grade] = []
+      @roster[grade] << name
+    end
+  end
   
 
   school = School.new("Bayside High School")

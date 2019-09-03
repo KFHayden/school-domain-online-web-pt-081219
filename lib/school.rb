@@ -29,8 +29,8 @@ class School
   end
   
   def sort
-    
-    @roster.sort
+    sorted_roster = {}
+    @roster.sort << sorted_roster
   end
   
   school = School.new("Bayside High School")

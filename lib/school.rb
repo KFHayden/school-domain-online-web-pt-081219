@@ -18,6 +18,8 @@ class School
       @roster[grade] = []
       @roster[grade] << name
     end
+    
+    
   
   school = School.new("Bayside High School")
   

@@ -21,17 +21,17 @@ class School
   end
   
   def grade(year)
-    @roster.detect do |name, grade|
-      if name == year
-        return grade
+    @roster.detect do |a, b|
+      if a == year
+        return b
       end
     end
   end
   
   def sort
     sorted_roster = {}
-    @roster.each do |name, grade|
-      sorted_roster[name] = grade.sort
+    @roster.each do |a, b|
+      sorted_roster[a] = b.sort
     end
     sorted_roster
   end

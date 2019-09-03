@@ -22,7 +22,10 @@ class School
   
   def grade(year)
     @roster.detect do |name, grade|
-      if name == 
+      if name == year
+        grade
+      end
+    end
   
   school = School.new("Bayside High School")
   

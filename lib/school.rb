@@ -29,7 +29,7 @@ class School
   end
   
   def sort
-    
+    @roster.sort
   end
   
   school = School.new("Bayside High School")

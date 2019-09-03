@@ -21,7 +21,7 @@ class School
   end
   
   def grade(year)
-    
+    @roster.detect
   
   school = School.new("Bayside High School")
   

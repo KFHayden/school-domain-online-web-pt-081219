@@ -23,7 +23,7 @@ class School
   def grade(level)
     @roster.detect do |name, grade|
       if name == year
-        grade
+        return grade
       end
     end
   end

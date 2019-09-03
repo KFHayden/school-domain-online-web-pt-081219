@@ -15,10 +15,10 @@ class School
         @roster[grade] << name
       end
     else
+      @roster[grade] = []
       @roster[grade] << name
     end
-  end
   
 
-  school = School.new("Bayside High School")
+
 end
